@@ -23,4 +23,8 @@ public class PlayerDataResource extends JavaPlugin {
 			YamlUtils.createFileNotExist(player);
 		}
 	}
+	
+	public static YamlUtils getYamlUtils() {
+		return null;
+	}
 }
