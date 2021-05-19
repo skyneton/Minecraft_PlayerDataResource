@@ -1,0 +1,7 @@
+name: PlayerDataResource
+version: 1.0
+description: "플레이어 파일 데이터 읽기/쓰기 제공."
+author: skyneton
+
+load: STARTUP
+main: net.mpoisv.data.PlayerDataResource
