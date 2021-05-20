@@ -47,3 +47,6 @@
 		return playerDataResourceJar;
 	}
 ```
+
+# plugin.yml
+```softdepend: [PlayerDataResource]```
