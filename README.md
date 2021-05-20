@@ -1,4 +1,4 @@
-#Auto Plugin Download in Server
+# Auto Plugin Download in Server
 ```
 	@Override
 	public void onEnable() {
