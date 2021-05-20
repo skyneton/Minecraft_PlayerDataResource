@@ -1,5 +1,5 @@
 # Auto Plugin Download in Server
-```
+```java
 	@Override
 	public void onEnable() {
 		if(Bukkit.getPluginManager().getPlugin("PlayerDataResource") == null) {
@@ -50,3 +50,19 @@
 
 # plugin.yml
 ```softdepend: [PlayerDataResource]```
+
+# How To Use
+```java
+YamlUtils(or PlayerDataResource.getYamlUtils()).getYamlConfiguration(Player or String uuid); //Get YamlConfiguration from player
+```
+## if ∧ is null
+```java
+YamlUtils(or PlayerDataResource.getYamlUtils()).createFileNotExist(Player or String uuid); //Create File plugin/PlayerDataResource/uid.yml
+// (result false = error, true = success)
+// when player connect auto create - default
+```
+## Save
+```java
+YamlUtils(or PlayerDataResource.getYamlUtils()).saveYamlConfiguration(Player or String uuid, YamlConfiguration yml); //Save Yaml
+// (result false = error, true = success)
+```
