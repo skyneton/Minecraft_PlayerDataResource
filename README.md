@@ -53,16 +53,22 @@
 
 # How To Use
 ```java
-YamlUtils(or PlayerDataResource.getYamlUtils()).getYamlConfiguration(Player or String uuid); //Get YamlConfiguration from player
+YamlUtils.getYamlConfiguration(Player or String uuid); //Get YamlConfiguration from player
+//or
+PlayerDataResource.getYamlUtils().getYamlConfiguration(Player or String uuid);
 ```
 ## if ∧ is null
 ```java
-YamlUtils(or PlayerDataResource.getYamlUtils()).createFileNotExist(Player or String uuid); //Create File plugin/PlayerDataResource/uid.yml
+YamlUtils.createFileNotExist(Player or String uuid); //Create File plugin/PlayerDataResource/uid.yml
+//or
+PlayerDataResource.getYamlUtils().createFileNotExist(Player or String uuid);
 // (result false = error, true = success)
 // when player connect auto create - default
 ```
 ## Save
 ```java
-YamlUtils(or PlayerDataResource.getYamlUtils()).saveYamlConfiguration(Player or String uuid, YamlConfiguration yml); //Save Yaml
+YamlUtils.saveYamlConfiguration(Player or String uuid, YamlConfiguration yml); //Save Yaml
+//or
+PlayerDataResource.getYamlUtils().saveYamlConfiguration(Player or String uuid, YamlConfiguration yml);
 // (result false = error, true = success)
 ```
